@@ -61,10 +61,10 @@ class CalculadoraBasica extends HTMLElement {
                             <label for="operacion" class="form-label">Selecciona la operación</label>
 
                             <select class="form-select" id="operacion">
-                                <option value="suma">Suma (+)</option>
-                                <option value="resta">Resta (-)</option>
-                                <option value="multiplicacion">Multiplicación (×)</option>
-                                <option value="division">División (÷)</option>
+                                <option value="suma">Sumar</option>
+                                <option value="resta">Restat</option>
+                                <option value="multiplicacion">Multiplicar</option>
+                                <option value="division">Divisir</option>
                             </select>
 
                             </div>
@@ -87,6 +87,13 @@ class CalculadoraBasica extends HTMLElement {
         </div>
 
         `;
+
+    }
+
+    //Creamos el metodo llamadado connectedCallback
+    connectedCallback(){
+        
+        //llamamos a los elementos de DOM
 
     }
 }

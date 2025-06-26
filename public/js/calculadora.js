@@ -125,10 +125,12 @@ class CalculadoraBasica extends HTMLElement {
                 case 'division': total = val1 / val2;
                 break;
             }
+            
+            //Se muestra el resultado
+            this.resultado.textContent = "El resultado es: " + total;
 
         })
     }
 }
-
 
 customElements.define('calculadora-basica', CalculadoraBasica);

@@ -129,6 +129,12 @@ class CalculadoraBasica extends HTMLElement {
             //Se muestra el resultado
             this.resultado.textContent = "El resultado es: " + total;
 
+            //Controlador de división por cero
+            if (tipo === 'division' && val2 === 0) {
+                this.resultado.textContent = 'División por cero no valida';
+                return;
+            }
+
         })
     }
 }

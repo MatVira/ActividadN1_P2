@@ -112,7 +112,20 @@ class CalculadoraBasica extends HTMLElement {
                 this.resultado.textContent = 'Ingresa solo números.';
                 return;
             }
-            
+
+            //Lógica de la caluladora
+            let total;
+            switch (tipo) { case 'suma':
+                total = val1 + val2;
+                break;
+                case 'resta':  total = val1 - val2;
+                break;
+                case 'multiplicacion': total = val1 * val2;
+                break;
+                case 'division': total = val1 / val2;
+                break;
+            }
+
         })
     }
 }
